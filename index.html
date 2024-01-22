@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food website</title>
 
-</head>
+    <!-- google fonts -->
 
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
+  <body>
+    <header>
+      <!-- logo -->
+      <nav class="navbar">
+        <!-- logo -->
+        <img src="img/logo.png" alt="logo" class="logo" />
+
+        <!-- ul -->
+        <ul class="links_container">
+          <li class="link_items"><a href="#" class="links">Menu</a></li>
+          <li class="link_items"><a href="#" class="links">Order</a></li>
+          <li class="link_items"><a href="#" class="links">Restaurants</a></li>
+          <li class="link_items"><a href="#" class="links">Track Order</a></li>
+        </ul>
+        <!-- search box -->
+        <div class="nav_extras">
+          <!-- search box -->
+          <div class="search">
+            <input type="text" class="search_box" placeholder="Search..." />
+            <button class="search_btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <!-- cart btn -->
+          <a href="#" class="cart">
+            <i class="fa-solid fa-cart-plus"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+  </body>
+  <script src="index.js"></script>
 </html>
