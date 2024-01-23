@@ -121,12 +121,148 @@ body {
   height: 2.5rem;
   color: var(--secondary-text-color);
   border-radius: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   transition: 0.5s;
 }
 
-.cart:hover {
+/* hover effect */
+
+.cart:hover,
+.locate_btn:hover {
   background: var(--alpha-secondary-color);
+}
+
+/* hero section */
+#hero_section {
+  min-height: 100vh;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent-color);
+}
+
+.hero_container {
+  width: 400%;
+}
+
+.hero_heading {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 700;
+  color: var(--secondary-text-color);
+}
+
+.hero_line {
+  line-height: 2rem;
+  opacity: 0.75;
+  margin-top: 2rem;
+}
+
+.search.location {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.2rem;
+  margin: 2.5rem 0;
+}
+
+.locate_btn {
+  font-size: 1.2rem;
+  width: 4rem;
+  transition: 0.5s;
+}
+
+.search.location .search_box {
+  padding: 1rem 1.5rem;
+}
+
+.hero_action_btn_container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--light-text-color);
+  background: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+.btn.transparent {
+  background: transparent;
+  border: 0.1rem solid var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+
+.hero_action_btn_container .or {
+  color: var(--secondary-text-color);
+}
+
+.hero_img_container {
+  min-width: 30rem;
+  transform: scale(0.9) translateY(3rem);
+  min-height: 30rem;
+  position: relative;
+}
+
+.background_element,
+.forground_element {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.ellipse {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  border: 0.1rem solid var(--secondary-color);
+}
+
+.ellipse:nth-child(1) {
+  width: 80%;
+  transform: translate(-50%, -50%) rotate(20deg);
+}
+
+.ellipse:nth-child(2) {
+  width: 90%;
+  transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.ellipse:nth-child(3) {
+  width: 90%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+.hero_img {
+  position: absolute;
+  width: 10rem;
+  border-radius: 100%;
+  box-shadow: 0 1rem 1rem var(--shadow);
+}
+.hero_img:nth-child(1) {
+  width: 20rem;
+  left: -8%;
+  top: -15%;
+}
+.hero_img:nth-child(2) {
+  width: 15rem;
+  right: -15%;
+  top: 15%;
+}
+
+.hero_img:nth-child(3) {
+  width: 15rem;
+  left: 35%;
+  bottom: -20%;
 }
